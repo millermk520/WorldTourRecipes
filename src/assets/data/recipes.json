@@ -2,6 +2,7 @@
   {
     "country" : "Japan",
     "name" : "Ramen",
+    "img" : "ramen.jpg",
     "number" : "2 personnes",
     "preparation" : "10 minutes",
     "rest" : null,
