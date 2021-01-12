@@ -33,6 +33,11 @@ export class PopupService {
     }
     content = content + `</ol>`;
 
+    if (recipe.notes){
+      content += `<br>` +
+        `<div><span style="font-weight: bold;">${ recipe.notes }</span></div>`;
+    }
+
     return content;
   }
 }
