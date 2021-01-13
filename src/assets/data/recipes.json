@@ -306,7 +306,73 @@
         "label" : "Mélangez bien et laisser mijoter pendant 30 minutes à couvert et à feu doux."
       }
     ],
-    "notes" : "ATTENTION : LE PREMIER QUI MET UN COGNAC D’APPELLATION XO DANS SA PRÉPARATION AURA AFFAIRE À MOI, UN VS OU À LA LIMITE UN VSOP OUI, MAIS SURTOUT PAS UN XO."
+    "notes" : null
+  },
+  {
+    "country" : "Sweden",
+    "name" : "Boulettes de viande à la suédoise",
+    "img" : "boulettesSuedoise.jpg",
+    "number" : "4 personnes",
+    "preparation" : "15 minutes",
+    "rest" : null,
+    "cooking" : "40 minutes",
+    "ingredients" : [
+      {
+        "quantities" : "2",
+        "label" : "pommes de terre"
+      },
+      {
+        "quantities" : "1",
+        "label" : "oignon"
+      },
+      {
+        "quantities" : "30g",
+        "label" : "chapelure"
+      },
+      {
+        "quantities" : "3 cuillères à soupe",
+        "label" : "crème fraiche épaisse"
+      },
+      {
+        "quantities" : "250g",
+        "label" : "viande de boeuf hachée"
+      },
+      {
+        "quantities" : "250g",
+        "label" : "viande de porc hachée"
+      },
+      {
+        "quantities" : "1",
+        "label" : "oeuf"
+      },
+      {
+        "quantities" : "",
+        "label" : "Farine"
+      },
+      {
+        "quantities" : "",
+        "label" : "beurre"
+      },
+      {
+        "quantities": "",
+        "label": "sel / poivre"
+      }
+    ],
+    "steps" : [
+      {
+        "label" : "Epluchez et placez les pommes de terre dans une casserole d’eau froide puis portez à ébullition. Baissez le feu et laisser cuire environ 30 minutes."
+      },
+      {
+        "label" : "Hachez finement l’oignon. Ecrasez les pommes de terre et mélangez avec l’oignon émincé, la chapelure et la crème. Ajoutez le boeuf et le porc, l’oeuf, salez, poivrez et malaxez jusque’à obtenir un mélange homogène. (tips: vous pouvez aussi rajoutez du persil haché dans la préparation)"
+      },
+      {
+        "label" : "Versez un peu de farine dans une assiette. Façonnez des boulettes à la main et enrobez les de farine."
+      },
+      {
+        "label" : "Faites cuire à la poêle avec une noix de beurre pendant 10 minutes."
+      }
+    ],
+    "notes" : "N'hésitez à servir avec une sauce."
   }
 ]
 

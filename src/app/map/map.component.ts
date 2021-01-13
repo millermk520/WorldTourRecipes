@@ -63,7 +63,7 @@ export class MapComponent implements AfterViewInit {
                 fillOpacity: 0.5,
                 fillColor: '#00c167'
               })
-            }).bindPopup(this.createCustomPopup(recipe), {maxWidth: 400, maxHeight: 350, minWidth: 350});
+            }).bindPopup(this.createCustomPopup(recipe), {maxWidth: 450, maxHeight: 350, minWidth: 350});
             layerGroup.push(countrieLayer);
           }
         }

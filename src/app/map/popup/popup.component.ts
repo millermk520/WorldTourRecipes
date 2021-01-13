@@ -1,5 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {FileExportService} from '../../file-export.service';
+import html2canvas from 'html2canvas';
+import jspdf from 'jspdf';
 
 @Component({
   selector: 'app-popup',
@@ -15,7 +17,7 @@ export class PopupComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  test(recipe: any) {
+  exportAsPDF(recipe: any) {
     this.fileExportService.exportFile(recipe);
   }
 }
