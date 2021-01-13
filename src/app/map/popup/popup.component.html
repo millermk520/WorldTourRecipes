@@ -1,0 +1,24 @@
+<div style="maxWidth: 400; maxHeight: 350; minWidth: 350">
+  <h4>{{recipe.name}} <button type="button" class="btn btn-secondary" (click)="test(recipe)"><i class="fas fa-file-pdf"></i></button></h4>
+  <img src='{{ "/assets/img/recipes/" + recipe.img }}' style="width: 40%; height: 40%"/>
+  <br>
+  <div><span style="font-weight: bold;">Pour: </span>{{ recipe.number }}</div>
+  <div><span style="font-weight: bold;">Temps de préparation: </span>{{ recipe.preparation }}</div>
+  <div><span style="font-weight: bold;">Temps de repos: </span>{{ recipe.rest || "NA" }}</div>
+  <div><span style="font-weight: bold;">Temps de cuisson: </span>{{ recipe.cooking }}</div>
+  <br>
+
+  <H5> Ingrédients :</H5>
+  <ul>
+    <li *ngFor="let ingredient of recipe.ingredients">{{ ingredient.quantities }} {{ ingredient.label }}</li>
+  </ul>
+  <br>
+
+  <H5> Etapes :</H5>
+  <ol>
+    <li *ngFor="let step of recipe.steps">{{ step.label }}</li>
+  </ol>
+
+  <div *ngIf="recipe.notes"><span style="font-weight: bold;">{{ recipe.notes }}</span></div>
+</div>
+

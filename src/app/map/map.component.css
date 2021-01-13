@@ -1,12 +1,13 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css');
 .map-container {
   margin: 30px;
 }
 
 .map-frame {
   border: 2px solid black;
-  height: 900px;
+  height: 604px;
 }
 
 #map{
-  height:900px;
+  height:600px;
 }

@@ -1,8 +1,8 @@
-import {AfterViewInit, Component} from '@angular/core';
+import {AfterViewInit, Component, ComponentFactoryResolver, Injector} from '@angular/core';
 import * as L from 'leaflet';
 import {ShapeService} from '../shape.service';
 import {HttpClient} from '@angular/common/http';
-import {PopupService} from '../popup.service';
+import {PopupComponent} from './popup/popup.component';
 
 @Component({
   selector: 'app-map',
@@ -16,8 +16,9 @@ export class MapComponent implements AfterViewInit {
   private recipes;
 
   constructor(private shapeService: ShapeService,
-              private popupService: PopupService,
-              private httpClient: HttpClient) {
+              private httpClient: HttpClient,
+              private componentFactoryResolver: ComponentFactoryResolver,
+              private injector: Injector) {
   }
 
   ngAfterViewInit(): void {
@@ -62,7 +63,7 @@ export class MapComponent implements AfterViewInit {
                 fillOpacity: 0.5,
                 fillColor: '#00c167'
               })
-            }).bindPopup(this.popupService.makePopUp(recipe), {maxWidth: 400, maxHeight: 350, minWidth: 350});
+            }).bindPopup(this.createCustomPopup(recipe), {maxWidth: 400, maxHeight: 350, minWidth: 350});
             layerGroup.push(countrieLayer);
           }
         }
@@ -75,5 +76,18 @@ export class MapComponent implements AfterViewInit {
 
       L.control.layers(this.map.title, overlayMaps).addTo(this.map);
     });
+  }
+
+  private createCustomPopup(recipe: any) {
+    const factory = this.componentFactoryResolver.resolveComponentFactory(PopupComponent);
+    const component = factory.create(this.injector);
+
+    //Set the component inputs manually
+    component.instance.recipe = recipe;
+
+    //Manually invoke change detection, automatic wont work, but this is Ok if the component doesn't change
+    component.changeDetectorRef.detectChanges();
+
+    return component.location.nativeElement;
   }
 }

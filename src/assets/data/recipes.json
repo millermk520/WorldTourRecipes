@@ -166,7 +166,8 @@
       {
         "label" : "Laissez mijoter à feu moyen pendant 15 minutes."
       }
-    ]
+    ],
+    "note" : "Ne pas hésité à rajouter un peu plus de coulis de tomate."
   },
   {
     "country" : "Spain",
@@ -214,10 +215,95 @@
         "label" : "Retirez les nerf de l’onglet de boeuf, et couper la viande en cube de 50g chacun environs."
       },
       {
-        "label" : "Plongez les cubes dans la marinade pendant 1h, afin que la viande s’imprègne bien de celle-ci et soit attendrie par l’acidité du mélange"
+        "label" : "Plongez les cubes dans la marinade pendant 1h, afin que la viande s’imprègne bien de celle-ci et soit attendrie par l’acidité du mélange."
       },
       {
         "label" : "Piqué les morceaux de viande sur les piques à brochettes et les faire revenir (quelque secondes pour une cuisson bleue, ou quelques minutes pour une cuisson à point) dans une poêle bien chaude ou frémit l’huile d’olive."
+      }
+    ],
+    "notes" : "ATTENTION : LE PREMIER QUI MET UN COGNAC D’APPELLATION XO DANS SA PRÉPARATION AURA AFFAIRE À MOI, UN VS OU À LA LIMITE UN VSOP OUI, MAIS SURTOUT PAS UN XO."
+  },
+  {
+    "country" : "India",
+    "name" : "Curry de poulet",
+    "img" : "curry.jpg",
+    "number" : "4 personnes",
+    "preparation" : "15 minutes",
+    "rest" : null,
+    "cooking" : "35 minutes",
+    "ingredients" : [
+      {
+        "quantities" : "2",
+        "label" : "oignons"
+      },
+      {
+        "quantities" : "2",
+        "label" : "gousses d'ail"
+      },
+      {
+        "quantities" : "1",
+        "label" : "poivron"
+      },
+      {
+        "quantities" : "1",
+        "label" : "piment rouge"
+      },
+      {
+        "quantities" : "4",
+        "label" : "filet de poulet"
+      },
+      {
+        "quantities" : "50g",
+        "label" : "beurre clarifié"
+      },
+      {
+        "quantities" : "1 cuillère à soupe",
+        "label" : "pate à curry"
+      },
+      {
+        "quantities" : "40cl",
+        "label" : "coulis de tomates"
+      },
+      {
+        "quantities" : "25cl",
+        "label" : "lait de coco"
+      },
+      {
+        "quantities" : "1",
+        "label" : "baton de canelle"
+      },
+      {
+        "quantities" : "",
+        "label" : "Les feuilles d’une demi botte de coriandre"
+      }
+    ],
+    "steps" : [
+      {
+        "label" : "Clarifié le beurre, pour cela, le faire fondre à feu doux pour éviter qu’il ne bout, et une fois que le beurre est fondue, écumé la mousse blanche qui se forme à la surface, ce qu’il vous restera sera votre beurre clarifié. (Astuce si vous avez des filtre à thé jetable, vous pouvez verser votre beure fondu dedans, et l’écume restera dans le filtre, ce qui sera moins long que d’écumer)"
+      },
+      {
+        "label" : "Pelez et hachez les oignons et l’ail, mettez les de coté."
+      },
+      {
+        "label" : "Épépinez le poivron et émincer le finement, faite de même avec le piment, puis mettez les de coté également."
+      },
+      {
+        "label" : "Taillez les filets de poulet en cube et salez les légèrement."
+      },
+      {
+        "label" : "Dans une cocotte, faite chauffer à feu moyen le beure clarifié et déposez y les oignons et l’ail. Faites les revenir pendant 2 minutes en mélangeant bien, puis ajouter la pate à curry."
+      },
+      {
+        "label" : "Rajoutez les cubes de poulet ainsi que le poivron et le piment dans la préparation, et faite les revenir 2 minutes supplémentaire, le temps que toutes les faces de la viande soient coloré."
+      },
+      {
+        "label" : "Ajoutez le coulis de tomate et lait de coco."
+      },
+      {
+        "label" : "Mélangez bien, puis déposez le baton de cannelle et les feuilles de coriandre."
+      },
+      {
+        "label" : "Mélangez bien et laisser mijoter pendant 30 minutes à couvert et à feu doux."
       }
     ],
     "notes" : "ATTENTION : LE PREMIER QUI MET UN COGNAC D’APPELLATION XO DANS SA PRÉPARATION AURA AFFAIRE À MOI, UN VS OU À LA LIMITE UN VSOP OUI, MAIS SURTOUT PAS UN XO."
