@@ -373,6 +373,47 @@
       }
     ],
     "notes" : "N'hésitez à servir avec une sauce."
+  },
+  {
+    "country" : "Brazil",
+    "name" : "Brigadeiros",
+    "img" : "brigadeiros.jpg",
+    "number" : "une dizaine de brigadeiros",
+    "preparation" : "10 minutes",
+    "rest" : "2h",
+    "cooking" : "3 minutes",
+    "ingredients" : [
+      {
+        "quantities" : "15g",
+        "label" : "beurre doux"
+      },
+      {
+        "quantities" : "3 cuillères à soupe",
+        "label" : "chocolat en poudre"
+      },
+      {
+        "quantities" : "400g",
+        "label" : "lait concentré sucré"
+      },
+      {
+        "quantities" : "",
+        "label" : "noix de coco rapée / vermicelles en chocolat / ..."
+      }
+    ],
+    "steps" : [
+      {
+        "label" : "Dans un saladier, mélangez le lait concentré sucré et le chocolat en poudre."
+      },
+      {
+        "label" : "Faites fondre le beurre dans une poêle, des qu'il est fondu, ajoutez le mélange précédemment préparé."
+      },
+      {
+        "label" : "Des que la préparation commence à épaissir, versez dans un saladier et laisser refroidir de 1h à 2h (préféré 2h)."
+      },
+      {
+        "label" : "Une fois refroidit, faites des boulettes d'environs 2 cm de diamètres, et décorez les soit avec de la noix de coco râpée, soit avec des vermicelles en chocolat, soit avec n'importe qu'elle autre décoration alimentaire à votre gout."
+      }
+    ]
   }
 ]
 
