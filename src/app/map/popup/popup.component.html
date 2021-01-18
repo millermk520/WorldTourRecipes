@@ -1,5 +1,11 @@
+<div class="row">
+  <div class="col-md-10"></div>
+  <div class="col-md-2">
+    <button type="button" class="btn btn-secondary" (click)="exportAsPDF(recipe);"><i class="fas fa-file-pdf"></i></button>
+  </div>
+</div>
 <div id="{{recipe.name}}" style="maxWidth: 400; maxHeight: 350; minWidth: 350">
-  <h4>{{recipe.name}} <button type="button" class="btn btn-secondary" (click)="exportAsPDF(recipe);"><i class="fas fa-file-pdf"></i></button></h4>
+  <h4>{{recipe.name}}</h4>
   <img src='{{ "/assets/img/recipes/" + recipe.img }}' style="width: 40%; height: 40%"/>
   <br>
   <div><span style="font-weight: bold;">Pour: </span>{{ recipe.number }}</div>
