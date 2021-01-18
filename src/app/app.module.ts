@@ -10,6 +10,8 @@ import { PopupComponent } from './map/popup/popup.component';
 import { RecipesListComponent } from './recipes-list/recipes-list.component';
 import {MatTableModule} from '@angular/material/table';
 import { RecipeComponent } from './recipe/recipe.component';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { RecipeComponent } from './recipe/recipe.component';
     MapComponent,
     PopupComponent,
     RecipesListComponent,
-    RecipeComponent
+    RecipeComponent,
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

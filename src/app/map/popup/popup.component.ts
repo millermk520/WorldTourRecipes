@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {FileExportService} from '../../file-export.service';
+import {FileExportService} from '../../services/file-export.service';
 import html2canvas from 'html2canvas';
 import jspdf from 'jspdf';
 

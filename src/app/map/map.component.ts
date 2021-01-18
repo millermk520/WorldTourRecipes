@@ -1,6 +1,6 @@
 import {AfterViewInit, Component, ComponentFactoryResolver, Injector} from '@angular/core';
 import * as L from 'leaflet';
-import {ShapeService} from '../shape.service';
+import {ShapeService} from '../services/shape.service';
 import {HttpClient} from '@angular/common/http';
 import {PopupComponent} from './popup/popup.component';
 

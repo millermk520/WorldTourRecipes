@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FileExportService} from '../file-export.service';
+import {FileExportService} from '../services/file-export.service';
 
 @Component({
   selector: 'app-recipe',
