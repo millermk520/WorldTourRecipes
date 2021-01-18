@@ -17,7 +17,7 @@ export class RecipesListComponent implements OnInit {
   ngOnInit(): void {
     this.httpClient.get('/assets/data/recipes.json').subscribe(recipes => {
       this.recipes = recipes;
-      this.recipes.sort((a, b) => a.name.localeCompare(b.name));
+      this.recipes.sort((a, b) => a.country.localeCompare(b.country) || a.name.localeCompare(b.name));
     });
   }
 
