@@ -1,0 +1,24 @@
+<div class="container" *ngIf="recipes">
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Recette</th>
+      <th scope="col">Pays d'origine</th>
+      <th scope="col">Temps de préparation</th>
+      <th scope="col">Temps de repos</th>
+      <th scope="col">Temps de cuisson</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let recipe of recipes; let index = index;">
+      <th scope="row">{{index}}</th>
+      <td><a (click)="goToRecipe(recipe)" class="link">{{recipe.name}}</a></td>
+      <td i18n>{{recipe.country}}</td>
+      <td>{{recipe.preparation}}</td>
+      <td>{{recipe.rest}}</td>
+      <td>{{recipe.cooking}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
