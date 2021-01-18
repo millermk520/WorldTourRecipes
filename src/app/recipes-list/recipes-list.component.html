@@ -8,6 +8,7 @@
       <th scope="col">Temps de préparation</th>
       <th scope="col">Temps de repos</th>
       <th scope="col">Temps de cuisson</th>
+      <th scope="col">Ingredients</th>
     </tr>
     </thead>
     <tbody>
@@ -18,6 +19,11 @@
       <td>{{recipe.preparation}}</td>
       <td>{{recipe.rest}}</td>
       <td>{{recipe.cooking}}</td>
+      <td>
+        <ul>
+          <li *ngFor="let ingredient of recipe.ingredients">{{ ingredient.quantities }} {{ ingredient.label }}</li>
+        </ul>
+      </td>
     </tr>
     </tbody>
   </table>
