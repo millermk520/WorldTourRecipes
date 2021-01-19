@@ -15,7 +15,7 @@
     <tr *ngFor="let recipe of recipes; let index = index;">
       <th scope="row">{{index}}</th>
       <td><a (click)="goToRecipe(recipe)" class="link">{{recipe.name}}</a></td>
-      <td i18n>{{recipe.country}}</td>
+      <td>{{recipe.country}}</td>
       <td>{{recipe.preparation}}</td>
       <td>{{recipe.rest}}</td>
       <td>{{recipe.cooking}}</td>
