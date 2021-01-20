@@ -414,6 +414,82 @@
         "label" : "Une fois refroidit, faites des boulettes d'environs 2 cm de diamètres, et décorez les soit avec de la noix de coco râpée, soit avec des vermicelles en chocolat, soit avec n'importe qu'elle autre décoration alimentaire à votre gout."
       }
     ]
+  },
+  {
+    "country" : "USA",
+    "name" : "Carne Adovada",
+    "img" : "carneAdovada.jpg",
+    "number" : "8 personnes",
+    "preparation" : "30 minutes",
+    "rest" : "",
+    "cooking" : "2 HEURE",
+    "ingredients" : [
+      {
+        "quantities" : "5 cuillère à soupe",
+        "label" : "huile végétale"
+      },
+      {
+        "quantities" : "1",
+        "label" : "oignon coupé en petits dés"
+      },
+      {
+        "quantities" : "3",
+        "label" : "gousse d'ail hachées"
+      },
+      {
+        "quantities" : "1kg",
+        "label" : "filet de porc coupé en cubes"
+      },
+      {
+        "quantities" : "1L",
+        "label" : "bouillon de volaille"
+      },
+      {
+        "quantities" : "2 cuillère à café",
+        "label" : "coriandre en poudre"
+      },
+      {
+        "quantities" : "2 cuillère à café",
+        "label" : "origan"
+      },
+      {
+        "quantities" : "2 cuillère à soupe",
+        "label" : "piment en poudre"
+      },
+      {
+        "quantities" : "1 cuillère à café",
+        "label" : "cannelle en poudre"
+      },
+      {
+        "quantities" : "1 cuillère à café",
+        "label" : "cumin en poudre"
+      },
+      {
+        "quantities" : "1 cuillère à soupe",
+        "label" : "miel"
+      },
+      {
+        "quantities" : "2 cuillère à soupe",
+        "label" : "vinaigre de vin rouge"
+      }
+    ],
+    "steps" : [
+      {
+        "label" : "Préchauffez le four à 180° et préparer un grand plat pouvant aller au four."
+      },
+      {
+        "label" : "Dans une poêle, faite chauffer l’huile sur feu moyen. Ajouté l’oignon et l’ail et faites les revenir quelques minutes jusqu’à ce qu’ils soient tendre et doré. Réservez les."
+      },
+      {
+        "label" : "Faire ensuite doré le porc dans la même poêle. Quand tout les cubes sont dorés, mettez les dans le plat."
+      },
+      {
+        "label" : "Mixez l’oignon, l’ail, 25cl de bouillon, les épices, le miel et le vinaigre jusque’a obtenir un mélange homogène, puis versez le tout sur le porc dans le plat. Ajouter le reste de bouillon jusqu’à couvrir le porc."
+      },
+      {
+        "label" : "Enfournez sans couvercle pour 2h de cuisson."
+      }
+    ]
   }
 ]
 
