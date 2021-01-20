@@ -14,7 +14,8 @@
     <tbody>
     <tr *ngFor="let recipe of recipes; let index = index;">
       <th scope="row">{{index}}</th>
-      <td><a (click)="goToRecipe(recipe)" class="link">{{recipe.name}}</a></td>
+      <td><a (click)="goToRecipe(recipe)" class="link" [ngbTooltip]="tipContent">{{recipe.name}}</a></td>
+      <ng-template #tipContent><img src='{{ "/assets/img/recipes/" + recipe.img }}' style="width: 30%; height: 30%;"></ng-template>
       <td>{{recipe.country}}</td>
       <td>{{recipe.preparation}}</td>
       <td>{{recipe.rest}}</td>
