@@ -1,30 +1,47 @@
-<div class="row">
-  <div class="col-md-10"></div>
-  <div class="col-md-2">
-    <button type="button" class="btn btn-secondary" (click)="exportAsPDF(recipe);"><i class="fas fa-file-pdf"></i></button>
+<div class="container">
+  <div class="row">
+    <div class="col-md-10"></div>
+    <div class="col-md-2">
+      <button type="button" class="btn btn-secondary" (click)="exportAsPDF(recipe);"><i class="fas fa-file-pdf"></i></button>
+    </div>
+  </div>
+  <div id="{{recipe.name}}" style="maxWidth: 400; maxHeight: 350; minWidth: 350">
+    <h4 class="card-header text-center">{{recipe.name}}</h4>
+    <br>
+    <img src='{{ "/assets/img/recipes/" + recipe.img }}' style="width: 30%; height: 30%; display: block;
+    margin-left: auto;
+    margin-right: auto"/>
+    <br>
+    <div><span style="font-weight: bold;">Pour: </span>{{ recipe.number }}</div>
+    <div><span style="font-weight: bold;">Temps de préparation: </span>{{ recipe.preparation }}</div>
+    <div><span style="font-weight: bold;">Temps de repos: </span>{{ recipe.rest || "NA" }}</div>
+    <div><span style="font-weight: bold;">Temps de cuisson: </span>{{ recipe.cooking }}</div>
+    <br>
+
+    <div class="card">
+      <div class="card-header">
+        Ingrédients
+      </div>
+      <div class="card-body">
+        <ul>
+          <li *ngFor="let ingredient of recipe.ingredients">{{ ingredient.quantities }} {{ ingredient.label }}</li>
+        </ul>
+      </div>
+    </div>
+    <br>
+
+    <div class="card">
+      <div class="card-header">
+        Etapes
+      </div>
+      <div class="card-body">
+        <ol>
+          <li *ngFor="let step of recipe.steps">{{ step.label }}</li>
+        </ol>
+      </div>
+    </div>
+    <br>
+    <div *ngIf="recipe.notes"><span style="font-weight: bold;">{{ recipe.notes }}</span></div>
+    <br>
   </div>
 </div>
-<div id="{{recipe.name}}" style="maxWidth: 400; maxHeight: 350; minWidth: 350">
-  <h4>{{recipe.name}}</h4>
-  <img src='{{ "/assets/img/recipes/" + recipe.img }}' style="width: 40%; height: 40%"/>
-  <br>
-  <div><span style="font-weight: bold;">Pour: </span>{{ recipe.number }}</div>
-  <div><span style="font-weight: bold;">Temps de préparation: </span>{{ recipe.preparation }}</div>
-  <div><span style="font-weight: bold;">Temps de repos: </span>{{ recipe.rest || "NA" }}</div>
-  <div><span style="font-weight: bold;">Temps de cuisson: </span>{{ recipe.cooking }}</div>
-  <br>
-
-  <H5> Ingrédients :</H5>
-  <ul>
-    <li *ngFor="let ingredient of recipe.ingredients">{{ ingredient.quantities }} {{ ingredient.label }}</li>
-  </ul>
-  <br>
-
-  <H5> Etapes :</H5>
-  <ol>
-    <li *ngFor="let step of recipe.steps">{{ step.label }}</li>
-  </ol>
-
-  <div *ngIf="recipe.notes"><span style="font-weight: bold;">{{ recipe.notes }}</span></div>
-</div>
-
